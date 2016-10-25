@@ -1,0 +1,26 @@
+{
+  "name": "now-gun-api",
+  "version": "1.0.0",
+  "description": "GunDB backend service hosted with now",
+  "main": "index.js",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "scripts": {
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "echo \"TODO: tests!\" && exit 0",
+    "dev": "nodemon --ignore data.json index.js --",
+    "start": "node index.js --"
+  },
+  "author": "Josh Gillies <npm@joshgilli.es> (http://joshgilli.es/)",
+  "license": "ISC",
+  "dependencies": {
+    "gun": "^0.3.997"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "nodemon": "^1.11.0",
+    "standard": "^8.4.0"
+  }
+}
